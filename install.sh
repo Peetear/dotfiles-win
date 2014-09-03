@@ -10,9 +10,10 @@ if [ "$(uname)" == "Darwin" ]; then
     ln -s ~/dotfiles/.bash_prompt ~/.bash_prompt
     ln -s ~/dotfiles/.gitconfig ~/.gitconfig
     ln -s ~/dotfiles/.jshintrc ~/.jshintrc
+    ln -s ~/dotfiles/.exports ~/.exports
 
     #reload our bash_profile
     source ~/.bash_profile
 
-    echo "*** 5 symlinks created that link to dotfiles directory. Goodbye"
+    echo "*** 6 symlinks created that link to dotfiles directory. Goodbye"
 fi
