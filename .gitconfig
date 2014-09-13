@@ -1,13 +1,17 @@
+# http://git-scm.com/book/en/Customizing-Git-Git-Configuration
+# we have two executables created:
+#   /usr/local/bin/extMerge
+#   /usr/local/bin/extDiff
+
 [merge]
-    keepBackup = false;
-    tool = p4merge
-[mergetool "p4merge"]
-    cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
-    keepTemporaries = false
-    trustExitCode = false
-    keepBackup = false
+  tool = extMerge
+[mergetool "extMerge"]
+  cmd = extMerge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+  trustExitCode = false
 [diff]
-    external = p4diff
+  external = extDiff
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+[push]
+	default = current
