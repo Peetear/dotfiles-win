@@ -4,7 +4,7 @@
 if [ "$(uname)" == "Darwin" ]; then
     echo "OSX Detected."
    
-    if [! -f ~/dotfiles/.extra ]; then 
+    if [ ! -f ~/dotfiles/.extra ]; then 
        echo "Creating .extra file in ~/dotfiles. Reminder: This is for bash settings that you dont want to push publically."
        touch ~/dotfiles/.extra # so that the link creataion is guranteed to work.
     fi
