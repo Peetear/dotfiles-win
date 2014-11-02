@@ -3,8 +3,11 @@
 # OSX only implementation for now
 if [ "$(uname)" == "Darwin" ]; then
     echo "OSX Detected."
-    echo "Creating .extra file in ~/dotfiles. Reminder: This is for bash settings that you dont want to push publically."
-    touch ~/dotfiles/.extra # so that the link creataion is guranteed to work.
+   
+    if [! -f ~/dotfiles/.extra ]; then 
+       echo "Creating .extra file in ~/dotfiles. Reminder: This is for bash settings that you dont want to push publically."
+       touch ~/dotfiles/.extra # so that the link creataion is guranteed to work.
+    fi
 
     # use bash profile. copy it from folder
     echo "Creating symlinks..."
@@ -16,9 +19,10 @@ if [ "$(uname)" == "Darwin" ]; then
     ln -s ~/dotfiles/.exports ~/.exports
     ln -s ~/dotfiles/.extra ~/.extra
     ln -s ~/dotfiles/.git-completion ~/.git-completion
+    ln -s ~/dotfiles/.vimrc ~/.vimrc
 
     #reload our bash_profile
     source ~/.bash_profile
 
-    echo "*** 8 symlinks created that link to dotfiles directory. You just saved yourself 938274289432 hours of pain. Goodbye"
+    echo "*** 9 symlinks created that link to dotfiles directory. You just saved yourself 938274289432 hours of pain. Goodbye"
 fi
