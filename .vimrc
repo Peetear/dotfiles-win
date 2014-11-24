@@ -28,6 +28,7 @@ call neobundle#end()
 filetype plugin indent on
 
 NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'scrooloose/syntastic'
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
@@ -40,6 +41,12 @@ set incsearch
 set hlsearch
 nmap \q :nohlsearch<CR>
 
-"As needed by Powerline plugin
+"Powerline plugin
 set laststatus=2
 set encoding=utf-8
+
+"Syntastic. Although it does auto detect recess, we need to specify it
+"otherwise doesnt load
+"Need to >npm -g install recess
+let g:syntastic_css_checkers=['recess']
+let g:syntastic_enable_css_checker = 1
