@@ -29,6 +29,7 @@ filetype plugin indent on
 
 NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'kien/ctrlp.vim'
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
