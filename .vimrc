@@ -40,6 +40,11 @@ NeoBundleCheck
 set number
 syntax on
 
+" Turn tabs into spaces
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+
 set incsearch
 set hlsearch
 nmap \q :nohlsearch<CR>
