@@ -32,6 +32,7 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'altercation/vim-colors-solarized'
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
@@ -62,3 +63,10 @@ set encoding=utf-8
 "Need to >npm -g install recess
 let g:syntastic_css_checkers=['recess']
 let g:syntastic_enable_css_checker = 1
+
+"Solarized http://vimawesome.com/plugin/vim-colors-solarized-sparks-fly
+" Make sure to install terminal color theme
+" https://github.com/tomislav/osx-terminal.app-colors-solarized
+syntax enable
+set background=dark
+colorscheme solarized
