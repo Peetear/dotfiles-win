@@ -31,6 +31,7 @@ NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'groenewege/vim-less'
+NeoBundle 'pangloss/vim-javascript'
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
