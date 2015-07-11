@@ -33,6 +33,10 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'osyo-manga/vim-over'
+NeoBundle 'mhinz/vim-startify'
+NeoBundle 'reedes/vim-thematic'
+
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
@@ -70,3 +74,12 @@ let g:syntastic_enable_css_checker = 1
 syntax enable
 set background=dark
 colorscheme solarized
+
+let g:thematic#themes = {
+\ 'solarized_dark' :{'colorscheme': 'solarized',
+\                 'background': 'dark',
+\                },
+\ 'solarized_light' :{'colorscheme': 'pencil',
+\                 'background': 'light',
+\                },
+\ }
