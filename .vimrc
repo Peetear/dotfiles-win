@@ -37,7 +37,11 @@ NeoBundle 'groenewege/vim-less'
 NeoBundleCheck
 
 set number
+" syntax on, then filetype off and on to get force reloading of filetype.
+" http://stackoverflow.com/questions/5602767/why-is-vim-not-detecting-my-coffescript-filetype
 syntax on
+filetype off
+filetype on
 
 " Turn tabs into spaces
 set expandtab
