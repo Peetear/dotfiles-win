@@ -54,7 +54,15 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
+" Searching. Move the cursor incrementally as we find matches, ignore case
+" (except when we explicitly have a capitalized char)
+" (We can force case sensitivity by appending \C to the end. eg: /dog\c will
+"   search for only lower case 'dog'
 set incsearch
+set ignorecase
+set smartcase
+
+" map '\q' to kill highlighted seach. '\q' isn't used for anything else
 set hlsearch
 nmap \q :nohlsearch<CR>
 
