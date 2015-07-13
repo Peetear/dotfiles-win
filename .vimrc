@@ -56,7 +56,7 @@ set softtabstop=2
 
 " Searching. Move the cursor incrementally as we find matches, ignore case
 " (except when we explicitly have a capitalized char)
-" (We can force case sensitivity by appending \C to the end. eg: /dog\c will
+" (We can force case sensitivity by appending \C to the end. eg: /dog\C will
 "   search for only lower case 'dog'
 set incsearch
 set ignorecase
