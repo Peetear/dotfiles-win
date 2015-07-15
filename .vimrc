@@ -36,6 +36,7 @@ NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'osyo-manga/vim-over'
 NeoBundle 'mhinz/vim-startify'
 NeoBundle 'reedes/vim-thematic'
+NeoBundle 'rking/ag.vim'
 
 
 " If there are uninstalled bundles found on startup,
