@@ -44,6 +44,9 @@ NeoBundle 'rking/ag.vim'
 NeoBundleCheck
 
 set number
+set cursorline "highlits current line cursor is on
+set wildmenu " when pressing tab, we get graphical autocomplete of matches inside Command Line mode
+set showmatch " eg matching braces
 " syntax on, then filetype off and on to get force reloading of filetype.
 " http://stackoverflow.com/questions/5602767/why-is-vim-not-detecting-my-coffescript-filetype
 syntax on

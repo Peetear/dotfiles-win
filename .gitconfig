@@ -3,15 +3,22 @@
 #   /usr/local/bin/extMerge
 #   /usr/local/bin/extDiff
 
-[merge]
-  tool = extMerge
-[mergetool "extMerge"]
-  cmd = extMerge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
-  trustExitCode = false
-[diff]
-  external = extDiff
-[filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+#[merge]
+#  tool = extMerge
+#[mergetool "extMerge"]
+#  cmd = extMerge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+#  trustExitCode = false
+#[diff]
+#  external = extDiff
+#[filter "media"]
+#	clean = git-media-clean %f
+#	smudge = git-media-smudge %f
 [push]
 	default = current
+[user]
+	email = theol88@gmail.com
+[grep]
+	extendRegexp = true
+	lineNumber = true
+[alias]
+	g = grep --break --heading --line-number
