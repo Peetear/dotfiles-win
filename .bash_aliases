@@ -36,6 +36,7 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias work="cd ~/Work"
+alias v="vim"
 
 # npm
 alias nom="rm -rf node_modules && npm cache clear && npm install"
@@ -46,6 +47,10 @@ alias pumpitup="osascript -e 'set volume 7'"
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# Unitl I can more finely differentiate between these two
+# https://news.ycombinator.com/item?id=10144771
+function clip { [ -t 0 ] && pbpaste || pbcopy;}
 
 # mongodb
 alias mongostart="sudo service mongodb start"
