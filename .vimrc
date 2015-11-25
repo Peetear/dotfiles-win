@@ -37,6 +37,7 @@ NeoBundle 'osyo-manga/vim-over'
 NeoBundle 'mhinz/vim-startify'
 NeoBundle 'reedes/vim-thematic'
 NeoBundle 'rking/ag.vim'
+NeoBundle 'henrik/vim-indexed-search'
 
 
 " If there are uninstalled bundles found on startup,
