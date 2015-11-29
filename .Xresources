@@ -1,3 +1,4 @@
+! Solarized color scheme for xterm
 #define S_base03        #002b36
 #define S_base02        #073642
 #define S_base01        #586e75
@@ -55,6 +56,9 @@
 *color7:                S_base2
 *color15:               S_base3
 
+! END of Solarized color scheme
+
+! Get copying and pasting working in OS X
 *VT100.translations: #override  Meta <KeyPress> V:  insert-selection(PRIMARY, CUT_BUFFER0) \n
 
 xterm*vt100*geometry: 80x50
