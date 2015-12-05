@@ -39,7 +39,6 @@ NeoBundle 'reedes/vim-thematic'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'henrik/vim-indexed-search'
 
-
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
 NeoBundleCheck
@@ -47,7 +46,6 @@ NeoBundleCheck
 set title
 set number
 set cursorline "highlights current line cursor is on
-set wildmenu " when pressing tab, we get graphical autocomplete of matches inside Command Line mode
 set showmatch " eg matching braces
 " syntax on, then filetype off and on to get force reloading of filetype.
 " http://stackoverflow.com/questions/5602767/why-is-vim-not-detecting-my-coffescript-filetype
@@ -55,18 +53,22 @@ syntax on
 filetype off
 filetype on
 
-" Turn tabs into spaces
-set expandtab
-set shiftwidth=2
-set softtabstop=2
+set wildmenu " when pressing tab, we get graphical autocomplete of matches inside Command Line mode
 
-" :help 'listchars''
+" spaces / tabs
+set autoindent
+set expandtab
+set nojoinspaces " 1 space between joined lines instead of 2
+" use gJ in normal mode to join with no spaces at all
+set shiftwidth=4
+set softtabstop=4
+
 set list
 " note that we are not showing EOL
 set listchars=trail:·,precedes:«,extends:»,tab:▸\ 
 
-" Searching. 
-" Move the cursor incrementally as we find matches, ignore case
+" searching
+" move the cursor incrementally as we find matches, ignore case
 " (except when we explicitly have a capitalized char)
 " (We can force case sensitivity by appending \C to the end. eg: /dog\C will
 "   search for only lower case 'dog'
