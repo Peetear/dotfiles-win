@@ -58,10 +58,21 @@
 
 ! END of Solarized color scheme
 
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.rgba: rgb
+
 ! Get copying and pasting working in OS X
 *VT100.translations: #override  Meta <KeyPress> V:  insert-selection(PRIMARY, CUT_BUFFER0) \n
 
 xterm*vt100*geometry: 80x50
 
-XTerm*faceName: Bitstream Vera Serif Mono
-xterm*faceSize: 11
+! XTerm*faceName: Bitstream Vera Serif Mono
+! xterm*faceSize: 11
+
+*.VT100.renderFont:         true
+*.VT100.faceName:           DejaVu Sans Mono
+*.VT100.faceSize:           11
+*.VT100.boldMode:           false
