@@ -1,12 +1,16 @@
+# Export these variables so that the shell's subprocesses have them in scope.
+
 # Make vim the default editor
 export EDITOR="vim";
 
+# --------------- Bash History
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768;
 export HISTFILESIZE=$HISTSIZE;
+# Value of `ignoredups` causes lines matching previous history entry to not be saved
 export HISTCONTROL=ignoredups;
 # Make some commands not show up in history
-export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help";
+export HISTIGNORE="ls:la:l:cd:cd -:pwd:exit:date:* --help";
 
 # Prefer US English and use UTF-8
 export LANG="en_US.UTF-8";
@@ -20,3 +24,6 @@ export MANPAGER="less -X";
 
 # Always enable colored `grep` output
 export GREP_OPTIONS="--color=auto";
+
+# Homebrew is a big reason for this
+export PATH="/usr/local/bin:$PATH"
