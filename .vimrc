@@ -44,8 +44,9 @@ NeoBundle 'henrik/vim-indexed-search'
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 
+set title
 set number
-set cursorline "highlits current line cursor is on
+set cursorline "highlights current line cursor is on
 set wildmenu " when pressing tab, we get graphical autocomplete of matches inside Command Line mode
 set showmatch " eg matching braces
 " syntax on, then filetype off and on to get force reloading of filetype.
@@ -59,7 +60,12 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
-" Searching. Move the cursor incrementally as we find matches, ignore case
+"  :help 'listchars''
+set list
+set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:▸\ 
+
+" Searching. 
+" Move the cursor incrementally as we find matches, ignore case
 " (except when we explicitly have a capitalized char)
 " (We can force case sensitivity by appending \C to the end. eg: /dog\C will
 "   search for only lower case 'dog'
