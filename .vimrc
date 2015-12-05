@@ -60,9 +60,10 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
-"  :help 'listchars''
+" :help 'listchars''
 set list
-set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:▸\ 
+" note that we are not showing EOL
+set listchars=trail:·,precedes:«,extends:»,tab:▸\ 
 
 " Searching. 
 " Move the cursor incrementally as we find matches, ignore case
