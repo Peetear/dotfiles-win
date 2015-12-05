@@ -43,10 +43,12 @@ NeoBundle 'henrik/vim-indexed-search'
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 
-set title
-set number
+" aesthetics
 set cursorline "highlights current line cursor is on
+set mouse=a " works in xterm. not OS X Terminal
+set number
 set showmatch " eg matching braces
+set title
 " syntax on, then filetype off and on to get force reloading of filetype.
 " http://stackoverflow.com/questions/5602767/why-is-vim-not-detecting-my-coffescript-filetype
 syntax on
@@ -66,6 +68,9 @@ set softtabstop=4
 set list
 " note that we are not showing EOL
 set listchars=trail:·,precedes:«,extends:»,tab:▸\ 
+
+" editing
+set backspace=indent,eol,start
 
 " searching
 " move the cursor incrementally as we find matches, ignore case
