@@ -19,3 +19,5 @@ bind "set show-all-if-ambiguous on"
 [[ -s "~/.gvm/scripts/gvm" ]] && source "~/.gvm/scripts/gvm"
 
 eval "$(pyenv init -)"
+
+source $(brew --repository)/Library/Contributions/brew_bash_completion.sh
