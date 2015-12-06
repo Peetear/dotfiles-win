@@ -67,6 +67,12 @@ Xft.rgba: rgb
 ! Get copying and pasting working in OS X
 *VT100.translations: #override  Meta <KeyPress> V:  insert-selection(PRIMARY, CUT_BUFFER0) \n
 
+! font sizing
+*VT100.Translations: #override Ctrl <Btn4Down>: larger-vt-font() \n\ 
+Ctrl <Btn5Down>: smaller-vt-font() \n\ 
+Shift Ctrl <Key>=: larger-vt-font() \n\ 
+Shift Ctrl <Key>-: smaller-vt-font() 
+
 xterm*vt100*geometry: 80x50
 
 ! XTerm*faceName: Bitstream Vera Serif Mono
@@ -76,3 +82,4 @@ xterm*vt100*geometry: 80x50
 *.VT100.faceName:           DejaVu Sans Mono
 *.VT100.faceSize:           11
 *.VT100.boldMode:           false
+
