@@ -43,6 +43,9 @@ NeoBundle 'henrik/vim-indexed-search'
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 
+scriptencoding utf-8
+set encoding=utf-8
+
 " aesthetics
 set cursorline "highlights current line cursor is on
 set mouse=a " works in xterm. not OS X Terminal
@@ -87,7 +90,6 @@ nmap \q :nohlsearch<CR>
 
 "Powerline plugin
 set laststatus=2
-set encoding=utf-8
 
 "Syntastic. Although it does auto detect recess, we need to specify it
 "otherwise doesnt load
