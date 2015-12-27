@@ -25,7 +25,7 @@ fi
 alias l="ls -lF ${colorflag}"
 
 # List all files colorized in long format, including dot files
-alias la="ls -laF ${colorflag}"
+alias la="ls -lahF ${colorflag}"
 
 # List only directories
 alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
@@ -38,6 +38,10 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias work="cd ~/Work"
 
+# bash_profile
+alias bp="vim ~/.bash_profile"
+alias sbp="source ~/.bash_profile"
+
 # npm
 alias nom="rm -rf node_modules && npm cache clear && npm install"
 
@@ -47,10 +51,6 @@ alias pumpitup="osascript -e 'set volume 7'"
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
-
-# Unitl I can more finely differentiate between these two
-# https://news.ycombinator.com/item?id=10144771
-function clip { [ -t 0 ] && pbpaste || pbcopy;}
 
 # mongodb
 alias mongostart="sudo service mongodb start"

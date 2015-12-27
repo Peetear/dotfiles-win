@@ -12,6 +12,9 @@ unset file
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
 
+# Node.js Version Manager
+source ~/.nvm/nvm.sh
+
 # Postgres version manager
 [[ -s "~/.pgvm/pgvm_env" ]] && source ~/.pgvm/pgvm_env
 
@@ -21,3 +24,14 @@ bind "set show-all-if-ambiguous on"
 eval "$(pyenv init -)"
 
 source $(brew --repository)/Library/Contributions/brew_bash_completion.sh
+
+## Custom functions
+
+# Unitl I can more finely differentiate between these two
+# https://news.ycombinator.com/item?id=10144771
+function clip { [ -t 0 ] && pbpaste || pbcopy;}
+
+# Paths delimited by line
+function path {
+    echo -e ${PATH//:/\\n}
+}
