@@ -39,8 +39,8 @@ alias dt="cd ~/Desktop"
 alias work="cd ~/Work"
 
 # bash_profile
-alias bp="vim ~/.bash_profile"
-alias sbp="source ~/.bash_profile"
+alias bp="vim ~/dotfiles/.bash_profile"
+alias sbp="source ~/dotfiles/.bash_profile"
 
 # npm
 alias nom="rm -rf node_modules && npm cache clear && npm install"
