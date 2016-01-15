@@ -68,9 +68,12 @@ set nojoinspaces " 1 space between joined lines instead of 2
 set shiftwidth=4
 set softtabstop=4
 
+" strip trailing white space on save
+autocmd BufWritePre * :%s/\s\+$//e
+
 set list
 " note that we are not showing EOL
-set listchars=trail:·,precedes:«,extends:»,tab:▸\ 
+set listchars=trail:·,precedes:«,extends:»,tab:▸\
 
 " editing
 set backspace=indent,eol,start
