@@ -52,6 +52,7 @@ set mouse=a " works in xterm. not OS X Terminal
 set number
 set showmatch " eg matching braces
 set title
+set showcmd
 " syntax on, then filetype off and on to get force reloading of filetype.
 " http://stackoverflow.com/questions/5602767/why-is-vim-not-detecting-my-coffescript-filetype
 syntax on
