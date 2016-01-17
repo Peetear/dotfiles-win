@@ -16,10 +16,10 @@ bind "set show-all-if-ambiguous on"
 source ~/.nvm/nvm.sh
 
 # Postgres version manager
-[[ -s "~/.pgvm/pgvm_env" ]] && source ~/.pgvm/pgvm_env
+[[ -s ~/.pgvm/pgvm_env ]] && source ~/.pgvm/pgvm_env
 
 # Go version manager
-[[ -s "~/.gvm/scripts/gvm" ]] && source "~/.gvm/scripts/gvm"
+[[ -s ~/.gvm/scripts/gvm ]] && source ~/.gvm/scripts/gvm
 
 eval "$(pyenv init -)"
 
