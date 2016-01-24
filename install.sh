@@ -1,11 +1,15 @@
 #!/bin/bash
 
 # OSX only implementation for now
+# TODO:  use a switch statement
 if [ "$(uname)" == "Darwin" ]; then
-    if [ ! -f ~/dotfiles/.extra ]; then 
+    # globally: always show scrolly
+    defaults write -g AppleShowScrollBars -string Always
+
+    if [ ! -f ~/dotfiles/.extra ]; then
        # Creating .extra file in ~/dotfiles.
        # This is for bash settings that you dont want to push publically.
-       touch ~/dotfiles/.extra 
+       touch ~/dotfiles/.extra
     fi
 
     ln -s ~/dotfiles/.bash_profile ~/.bash_profile
