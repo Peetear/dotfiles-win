@@ -8,6 +8,8 @@ for file in ~/.{bash_prompt,bash_aliases,exports,extra,git-completion}; do
 done
 unset file
 
+shopt -s cdspell
+
 # These binds in your profile take precedence over any defined in either /etc/inputrc or ~/.inputrc.
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
