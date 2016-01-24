@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # OSX only implementation for now
 # TODO:  use a switch statement
