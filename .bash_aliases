@@ -21,14 +21,12 @@ else # OS X `ls`
 	colorflag="-G"
 fi
 
-# List all files colorized in long format
-alias l="ls -lF ${colorflag}"
-
+alias l="ls -lhF ${colorflag}"
 # List all files colorized in long format, including dot files
 alias la="ls -lahF ${colorflag}"
-
+alias ll=la
 # List only directories
-alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
+alias lsd="ls -lhF ${colorflag} | grep --color=never '^d'"
 
 # Always use color output for `ls`
 alias ls="command ls ${colorflag}"
@@ -41,6 +39,9 @@ alias work="cd ~/Work"
 # bash_profile
 alias bp="vim ~/dotfiles/.bash_profile"
 alias sbp="source ~/dotfiles/.bash_profile"
+
+# keyboard bindings
+alias bindp="bind -p | grep -v '^#\|self-insert\|^$'"
 
 # npm
 alias nom="rm -rf node_modules && npm cache clear && npm install"
