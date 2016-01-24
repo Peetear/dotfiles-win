@@ -14,9 +14,9 @@ alias .....="cd ../../../.."
 ### ls
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
-	colorflag="--color"
+    colorflag="--color"
 else # OS X `ls`
-	colorflag="-G"
+    colorflag="-G"
 fi
 
 alias l="ls -lhF ${colorflag}"
@@ -50,6 +50,10 @@ alias work="cd ~/Work"
 # bash_profile
 alias bp="vim ~/dotfiles/.bash_profile"
 alias sbp="source ~/dotfiles/.bash_profile"
+
+# GNU and FreeBSD compat du args
+## interestinly, size is different amongst the two
+alias du1="du -h -d 1"
 
 # npm
 alias nom="rm -rf node_modules && npm cache clear && npm install"
