@@ -1,17 +1,15 @@
 # inspiration: https://github.com/mathiasbynens/dotfiles
 
+############# BUILT-INs
+#############
+#############
+
 # Easier nav
-alias ..="cd .."
 alias cd..="cd .."
+alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-
-alias v="vim"
-
-# Git
-alias g="git"
-alias gst="git status"
 
 ### ls
 # Detect which `ls` flavor is in use
@@ -31,6 +29,19 @@ alias lsd="ls -lhF ${colorflag} | grep --color=never '^d'"
 # Always use color output for `ls`
 alias ls="command ls ${colorflag}"
 
+# keyboard bindings
+alias bindp="bind -p | grep -v '^#\|self-insert\|^$'"
+
+#############
+#############
+############# END of BUILT-INs
+
+alias v="vim"
+
+# Git
+alias g="git"
+alias gst="git status"
+
 # Directories
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
@@ -39,9 +50,6 @@ alias work="cd ~/Work"
 # bash_profile
 alias bp="vim ~/dotfiles/.bash_profile"
 alias sbp="source ~/dotfiles/.bash_profile"
-
-# keyboard bindings
-alias bindp="bind -p | grep -v '^#\|self-insert\|^$'"
 
 # npm
 alias nom="rm -rf node_modules && npm cache clear && npm install"
