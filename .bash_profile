@@ -50,3 +50,24 @@ function whereisfunc() {
     declare -F $1
     shopt -u extdebug
 }
+
+# `v` with no arguments opens the current directory in Vim, otherwise opens the
+# given location
+function v() {
+    if [ $# -eq 0 ]; then
+        vim .;
+    else
+        vim "$@";
+    fi;
+}
+
+# Create a new directory and enter it
+function mkd() {
+    mkdir -p "$@" && cd "$_";
+}
+
+
+# Change working directory to the deepest Finder window location
+function cdf() { # short for `cdfinder`
+    cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')";
+}

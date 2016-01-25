@@ -36,8 +36,6 @@ alias bindp="bind -p | grep -v '^#\|self-insert\|^$'"
 #############
 ############# END of BUILT-INs
 
-alias v="vim"
-
 # Git
 alias g="git"
 alias gst="git status"
