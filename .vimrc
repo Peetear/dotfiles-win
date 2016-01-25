@@ -1,3 +1,5 @@
+" Neobundle bootstrapping
+
 " Note: Skip initialization for vim-tiny or vim-small.
 if !1 | finish | endif
 
@@ -42,6 +44,8 @@ NeoBundle 'henrik/vim-indexed-search'
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
 NeoBundleCheck
+
+" END of NeoBundle bootstrapping
 
 scriptencoding utf-8
 set encoding=utf-8
