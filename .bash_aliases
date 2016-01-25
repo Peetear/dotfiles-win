@@ -42,6 +42,13 @@ alias v="vim"
 alias g="git"
 alias gst="git status"
 
+# Enable tab completion for alias 'g'
+if [ "$(type -t _git)" = function ]; then
+    # type 'help complete' for man on builtins
+    # or 'man bash'
+    complete -o default -o nospace -F _git g;
+fi;
+
 # Directories
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"

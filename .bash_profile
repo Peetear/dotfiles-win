@@ -1,13 +1,16 @@
 # .bash_profile is run on login
 # .bashrc is sourced upon interactive non-login shells
 
-# for modularity sake
-for file in ~/.{bash_prompt,bash_aliases,exports,extra,git-completion}; do
+# .git-completion needs to be sourced before .bash_aliases as
+#      alias 'g' depends on function _git to be in shell
+for file in ~/.{bash_prompt,git-completion,bash_aliases,exports,extra}; do
     # test if has read permission
     # test if is a regular file (not dir nor device file)
     [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 unset file
+
+source $(brew --repository)/Library/Contributions/brew_bash_completion.sh
 
 # Auto correct misspelled cd's
 shopt -s cdspell
@@ -27,8 +30,6 @@ source ~/.nvm/nvm.sh
 # gvm use go1.5.3 # this is slowing down bash shell init
 
 eval "$(pyenv init -)"
-
-source $(brew --repository)/Library/Contributions/brew_bash_completion.sh
 
 ######################################## Custom functions
 ########################################
