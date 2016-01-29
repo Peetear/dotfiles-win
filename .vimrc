@@ -1,4 +1,7 @@
 " Neobundle bootstrapping
+"""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""
 
 " Note: Skip initialization for vim-tiny or vim-small.
 if !1 | finish | endif
@@ -44,7 +47,15 @@ NeoBundle 'henrik/vim-indexed-search'
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 
+
+"""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""
 " END of NeoBundle bootstrapping
+"""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""
 
 scriptencoding utf-8
 set encoding=utf-8
@@ -119,3 +130,12 @@ let g:thematic#themes = {
 \                 'background': 'light',
 \                },
 \ }
+
+"Tab colors. Need to be below themeatic otherwise gets overwritten.
+hi TabLine      ctermfg=Black  ctermbg=Green     cterm=NONE
+hi TabLineFill  ctermfg=Black  ctermbg=Green     cterm=NONE
+hi TabLineSel   ctermfg=White  ctermbg=DarkBlue  cterm=NONE
+
+"hi TabLine      guifg=#333 guibg=#222 gui=none ctermfg=254 ctermbg=238 cterm=none
+"hi TabLineSel   guifg=#666 guibg=#222 gui=bold ctermfg=231 ctermbg=235 cterm=bold
+"hi TabLineFill  guifg=#999 guibg=#222 gui=none ctermfg=254 ctermbg=238 cterm=none
