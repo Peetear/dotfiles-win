@@ -62,6 +62,7 @@ alias du1="du -h -d 1"
 
 # npm
 alias nom="rm -rf node_modules && npm cache clear && npm install"
+alias npmls="npm ls --depth=0"
 
 # Stuff I never really use but cannot delete either because of http://xkcd.com/530/
 alias stfu="osascript -e 'set volume output muted true'"
