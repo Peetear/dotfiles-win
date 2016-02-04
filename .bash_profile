@@ -10,6 +10,8 @@ for file in ~/.{bash_prompt,git-completion,bash_aliases,exports,extra}; do
 done
 unset file
 
+# command substitution
+# http://wiki.bash-hackers.org/syntax/expansion/cmdsubst
 source $(brew --repository)/Library/Contributions/brew_bash_completion.sh
 
 # Auto correct misspelled cd's
