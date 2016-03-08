@@ -92,6 +92,8 @@ set listchars=trail:·,precedes:«,extends:»,tab:▸\
 
 " editing
 set backspace=indent,eol,start
+" yanking and pasting are shared with mac os x clipboard. NOT tested on *nix
+set clipboard=unnamed
 
 " searching
 " move the cursor incrementally as we find matches, ignore case
