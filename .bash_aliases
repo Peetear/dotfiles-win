@@ -42,6 +42,7 @@ alias bindp="bind -p | grep -v '^#\|self-insert\|^$'"
 alias g="git"
 alias gst="git status"
 alias st="git status"
+alias gundo="git reset --hard HEAD && git clean -df && git status"
 
 # Enable tab completion for alias 'g'
 if [ "$(type -t _git)" = function ]; then

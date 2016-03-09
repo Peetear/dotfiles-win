@@ -31,7 +31,7 @@ source ~/.nvm/nvm.sh
 [[ -s ~/.gvm/scripts/gvm ]] && source ~/.gvm/scripts/gvm
 # gvm use go1.5.3 # this is slowing down bash shell init
 
-eval "$(pyenv init -)"
+#eval "$(pyenv init -)"
 
 ######################################## Custom functions
 ########################################
