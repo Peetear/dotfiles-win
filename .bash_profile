@@ -12,8 +12,6 @@ unset file
 
 # command substitution
 # http://wiki.bash-hackers.org/syntax/expansion/cmdsubst
-source $(brew --repository)/Library/Contributions/brew_bash_completion.sh
-
 # Auto correct misspelled cd's
 shopt -s cdspell
 
@@ -21,8 +19,6 @@ shopt -s cdspell
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
 
-# Node.js Version Manager
-source ~/.nvm/nvm.sh
 
 # Postgres version manager
 [[ -s ~/.pgvm/pgvm_env ]] && source ~/.pgvm/pgvm_env

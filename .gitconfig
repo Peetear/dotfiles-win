@@ -1,8 +1,3 @@
-# http://git-scm.com/book/en/Customizing-Git-Git-Configuration
-# we have two executables created:
-#   /usr/local/bin/extMerge
-#   /usr/local/bin/extDiff
-
 [merge]
   tool = extMerge
 [mergetool "extMerge"]
@@ -16,8 +11,8 @@
 [push]
 	default = current
 [user]
-        name = theo-bt
-	email = theo@bittorrent.com
+	name = Peetear
+	email = Peter@bittorrent.com
 [grep]
 	extendRegexp = true
 	lineNumber = true
